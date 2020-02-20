@@ -1,0 +1,317 @@
+/*
+ *  Copyright (c) 2020 Maverick Labs
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as,
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+@import "colors.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+label {
+  color: inherit !important;
+}
+.text-warning {
+  color: $warning-color !important;
+}
+
+.text-primary {
+  color: $primary-color !important;
+}
+
+.text-help {
+  font-size: 13px;
+  color: $secondary-text;
+}
+
+.navbar {
+  background-color: $primary-color;
+}
+
+.nav-item {
+  padding: 5px 20px !important;
+  color: $white-text;
+  position: relative;
+  cursor: pointer;
+  color: $faded-white-text;
+  &.selected {
+    font-weight: bold;
+    color: $white-text;
+  }
+  &:hover {
+    font-weight: bold;
+    color: $white-text;
+  }
+  .indicator {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: $accent-color;
+    bottom: -8px;
+    left: 0px;
+  }
+}
+
+.dd-user-wrapper {
+  position: absolute;
+  color: $white-text;
+  right: 16px;
+  padding: 5px 20px !important;
+  white-space: nowrap;
+}
+
+.note-Edit {
+  padding: 5px 20px !important;
+  color: black;
+  position: relative;
+  cursor: pointer;
+  color: $faded-white-text;
+  &.selected {
+    font-weight: bold;
+    color: black;
+  }
+  &:hover {
+    font-weight: bold;
+    color: black;
+  }
+  .indicator {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: $accent-color;
+    bottom: -8px;
+    left: 0px;
+  }
+}
+
+.fas.fa-user-circle {
+  color: #ffffffd4;
+  font-size: 32px;
+  &:hover {
+    color: white;
+  }
+}
+
+.dd-wrapper {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  right: 16px;
+}
+.dd-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+}
+.dd-header span {
+  margin-right: 20px;
+}
+.dd-list {
+  background-clip: padding-box;
+  background-color: #fff;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 4px;
+  box-shadow: 0 3px 12px rgba(27, 31, 35, 0.15);
+  list-style: none;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  position: absolute;
+  top: 100%;
+  z-index: 100;
+  width: 180px;
+  z-index: 10;
+  position: absolute;
+  right: 0px;
+  border: 1px solid #dfdfdf;
+  border-top: none;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px -1px #e8e8e8;
+  padding: 15px 0;
+  max-height: 215px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  .as {
+    font-size: 13px !important;
+    display: block !important;
+  }
+  .username {
+    padding: 0px 10px;
+    font-size: 14px !important;
+  }
+  .item {
+    width: 100%;
+    font-size: 14px;
+    padding: 4px 10px;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    &:hover {
+      background-color: $accent-color;
+      color: white;
+    }
+  }
+}
+
+.divider {
+  background-color: $divider-color;
+  height: 1px;
+  margin: 8px 1px;
+}
+.css-truncate.css-truncate-target,
+.css-truncate .css-truncate-target {
+  display: inline-block;
+  max-width: 125px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.settings-container,
+.ngo-details-container,
+.school-details-container {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.form-error {
+  margin-top: -8px;
+  font-size: 13px;
+  color: red;
+}
+
+.round-separator {
+  height: 5px;
+  width: 5px;
+  background-color: $primary-color;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+.background-enter {
+  transform: translate(100%);
+}
+.background-enter.background-enter-active {
+  transform: translate(0%);
+  transition: transform 400ms ease-in-out;
+}
+.background-exit {
+  transform: translate(1000%);
+}
+.background-exit.background-exit-active {
+  transform: translate(0%);
+  transition: transform 400ms ease-in-out;
+}
+
+.create-session-modal {
+  height: 400px !important;
+}
+
+.session-recurrence-wrapper {
+  &.unselected {
+    color: #80808080 !important;
+    pointer-events: none;
+    label {
+      color: #80808080 !important;
+    }
+  }
+  &.selected {
+    label {
+      color: $primary-text !important;
+    }
+    color: $primary-text !important;
+  }
+}
+
+// .message-enter {
+//   animation: slide-in 0.5s forwards;
+//   -webkit-animation: slide-in 0.5s forwards;
+// }
+// .message-enter-active {
+//   opacity: 1;
+//   transform: scale(1) translateY(0%);
+//   transition: all 300ms ease-out;
+// }
+// .message-exit {
+//   animation: slide-out 0.5s forwards;
+//   -webkit-animation: slide-out 0.5s forwards;
+// }
+// .message-exit-active {
+//   opacity: 0.01;
+//   transform: scale(0.9) translateY(50%);
+//   transition: all 300ms ease-out;
+// }
+
+.custom-modal-body {
+  min-height: 40vh;
+  max-height: 60vh;
+  overflow-y: scroll;
+}
+
+.custom-modal-body.padding {
+  padding-bottom: 128px;
+}
+
+.custom-modal-body.padding {
+  padding-bottom: 128px;
+}
+
+.custom-modal-body.medium-padding {
+  padding-bottom: 90px;
+}
+
+.custom-modal-body.small-padding {
+  padding-bottom: 30px;
+}
+
+.session-radio-readyOnly {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.selectHieght {
+  height: 50px;
+}
+
+.round-button {
+  border-radius: 50%;
+  margin: 20px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}

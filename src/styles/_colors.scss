@@ -1,0 +1,45 @@
+/*
+ *  Copyright (c) 2020 Maverick Labs
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as,
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+$primary-color: #0a1a44;
+$primary-button-hover: #ff8c00;
+$dark-primary-color: #0a1a44;
+$accent-color: #ff8c00;
+$accent-color-light: #ef8181;
+$primary-text: #212121;
+$secondary-text: #757575;
+$divider-color: #bdbdbd;
+$white-text: #ffffff;
+$faded-white-text: #bbbbbb;
+$background-color: #e0e2e7;
+$dark-background-color: #e0e2e7;
+$secondary-button-hover: #e4e4e4;
+$warning-color: #d0021b;
+
+:export {
+  primarycolor: $primary-color;
+  primary-button-hover: $primary-button-hover;
+  dark-primary-color: $dark-primary-color;
+  accent-color: $accent-color;
+  accent-color-light: $accent-color-light;
+  primary-text: $primary-text;
+  secondary-text: $secondary-text;
+  divider-color: $divider-color;
+  white-text: $white-text;
+  background-color: $background-color;
+  secondary-button-hover: $secondary-button-hover;
+  warning-color: $warning-color;
+}
