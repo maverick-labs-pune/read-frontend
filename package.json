@@ -29,7 +29,7 @@
     "react-transition-group": "1.x",
     "redux": "^4.0.1",
     "source-map-explorer": "^1.6.0",
-    "xlsx": "^0.14.2",
+    "xlsx": "^0.17.0",
     "yup": "^0.26.10"
   },
   "scripts": {
